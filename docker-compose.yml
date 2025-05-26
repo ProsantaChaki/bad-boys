@@ -1,0 +1,10 @@
+services:
+  bad-boyes:
+    network_mode: "host"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 3003:3003
