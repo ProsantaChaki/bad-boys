@@ -20,4 +20,5 @@ COPY . .
 EXPOSE 3003
 
 # Run the application with CompileDaemon
-CMD ["CompileDaemon", "--build=go build -o app ./cmd/server", "--command=./app"] 
+CMD CompileDaemon --build="go build -o app ./cmd/server/main.go" --command=./app 
+
